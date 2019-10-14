@@ -10,6 +10,7 @@ const MovieList = props => {
       axios
         .get('http://localhost:5000/api/movies')
         .then(response => {
+          // console.log(response);
           setMovies(response.data);
         })
         .catch(error => {
